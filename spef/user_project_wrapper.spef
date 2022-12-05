@@ -1,0 +1,1351 @@
+*SPEF "ieee 1481-1999"
+*DESIGN "user_project_wrapper"
+*DATE "11:11:11 Fri 11 11, 1111"
+*VENDOR "OpenRCX"
+*PROGRAM "Parallel Extraction"
+*VERSION "1.0"
+*DESIGN_FLOW "NAME_SCOPE LOCAL" "PIN_CAP NONE"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1 NS
+*C_UNIT 1 PF
+*R_UNIT 1 OHM
+*L_UNIT 1 HENRY
+
+*NAME_MAP
+*1 io_in[0]
+*2 io_in[10]
+*3 io_in[11]
+*4 io_in[12]
+*5 io_in[13]
+*6 io_in[14]
+*7 io_in[15]
+*8 io_in[16]
+*9 io_in[17]
+*10 io_in[18]
+*11 io_in[19]
+*12 io_in[1]
+*13 io_in[20]
+*14 io_in[21]
+*15 io_in[22]
+*16 io_in[23]
+*17 io_in[24]
+*18 io_in[25]
+*19 io_in[26]
+*20 io_in[27]
+*21 io_in[28]
+*22 io_in[29]
+*23 io_in[2]
+*24 io_in[30]
+*25 io_in[31]
+*26 io_in[32]
+*27 io_in[33]
+*28 io_in[34]
+*29 io_in[35]
+*30 io_in[36]
+*31 io_in[37]
+*32 io_in[3]
+*33 io_in[4]
+*34 io_in[5]
+*35 io_in[6]
+*36 io_in[7]
+*37 io_in[8]
+*38 io_in[9]
+*39 io_oeb[0]
+*40 io_oeb[10]
+*41 io_oeb[11]
+*42 io_oeb[12]
+*43 io_oeb[13]
+*44 io_oeb[14]
+*45 io_oeb[15]
+*46 io_oeb[16]
+*47 io_oeb[17]
+*48 io_oeb[18]
+*49 io_oeb[19]
+*50 io_oeb[1]
+*51 io_oeb[20]
+*52 io_oeb[21]
+*53 io_oeb[22]
+*54 io_oeb[23]
+*55 io_oeb[24]
+*56 io_oeb[25]
+*57 io_oeb[26]
+*58 io_oeb[27]
+*59 io_oeb[28]
+*60 io_oeb[29]
+*61 io_oeb[2]
+*62 io_oeb[30]
+*63 io_oeb[31]
+*64 io_oeb[32]
+*65 io_oeb[33]
+*66 io_oeb[34]
+*67 io_oeb[35]
+*68 io_oeb[36]
+*69 io_oeb[37]
+*70 io_oeb[3]
+*71 io_oeb[4]
+*72 io_oeb[5]
+*73 io_oeb[6]
+*74 io_oeb[7]
+*75 io_oeb[8]
+*76 io_oeb[9]
+*77 io_out[0]
+*78 io_out[10]
+*79 io_out[11]
+*80 io_out[12]
+*81 io_out[13]
+*82 io_out[14]
+*83 io_out[15]
+*84 io_out[16]
+*85 io_out[17]
+*86 io_out[18]
+*87 io_out[19]
+*88 io_out[1]
+*89 io_out[20]
+*90 io_out[21]
+*91 io_out[22]
+*92 io_out[23]
+*93 io_out[24]
+*94 io_out[25]
+*95 io_out[26]
+*96 io_out[27]
+*97 io_out[28]
+*98 io_out[29]
+*99 io_out[2]
+*100 io_out[30]
+*101 io_out[31]
+*102 io_out[32]
+*103 io_out[33]
+*104 io_out[34]
+*105 io_out[35]
+*106 io_out[36]
+*107 io_out[37]
+*108 io_out[3]
+*109 io_out[4]
+*110 io_out[5]
+*111 io_out[6]
+*112 io_out[7]
+*113 io_out[8]
+*114 io_out[9]
+*115 la_data_in[0]
+*116 la_data_in[10]
+*117 la_data_in[11]
+*118 la_data_in[12]
+*119 la_data_in[13]
+*120 la_data_in[14]
+*121 la_data_in[15]
+*122 la_data_in[16]
+*123 la_data_in[17]
+*124 la_data_in[18]
+*125 la_data_in[19]
+*126 la_data_in[1]
+*127 la_data_in[20]
+*128 la_data_in[21]
+*129 la_data_in[22]
+*130 la_data_in[23]
+*131 la_data_in[24]
+*132 la_data_in[25]
+*133 la_data_in[26]
+*134 la_data_in[27]
+*135 la_data_in[28]
+*136 la_data_in[29]
+*137 la_data_in[2]
+*138 la_data_in[30]
+*139 la_data_in[31]
+*140 la_data_in[32]
+*141 la_data_in[33]
+*142 la_data_in[34]
+*143 la_data_in[35]
+*144 la_data_in[36]
+*145 la_data_in[37]
+*146 la_data_in[38]
+*147 la_data_in[39]
+*148 la_data_in[3]
+*149 la_data_in[40]
+*150 la_data_in[41]
+*151 la_data_in[42]
+*152 la_data_in[43]
+*153 la_data_in[44]
+*154 la_data_in[45]
+*155 la_data_in[46]
+*156 la_data_in[47]
+*157 la_data_in[48]
+*158 la_data_in[49]
+*159 la_data_in[4]
+*160 la_data_in[50]
+*161 la_data_in[51]
+*162 la_data_in[52]
+*163 la_data_in[53]
+*164 la_data_in[54]
+*165 la_data_in[55]
+*166 la_data_in[56]
+*167 la_data_in[57]
+*168 la_data_in[58]
+*169 la_data_in[59]
+*170 la_data_in[5]
+*171 la_data_in[60]
+*172 la_data_in[61]
+*173 la_data_in[62]
+*174 la_data_in[63]
+*175 la_data_in[6]
+*176 la_data_in[7]
+*177 la_data_in[8]
+*178 la_data_in[9]
+*179 la_data_out[0]
+*180 la_data_out[10]
+*181 la_data_out[11]
+*182 la_data_out[12]
+*183 la_data_out[13]
+*184 la_data_out[14]
+*185 la_data_out[15]
+*186 la_data_out[16]
+*187 la_data_out[17]
+*188 la_data_out[18]
+*189 la_data_out[19]
+*190 la_data_out[1]
+*191 la_data_out[20]
+*192 la_data_out[21]
+*193 la_data_out[22]
+*194 la_data_out[23]
+*195 la_data_out[24]
+*196 la_data_out[25]
+*197 la_data_out[26]
+*198 la_data_out[27]
+*199 la_data_out[28]
+*200 la_data_out[29]
+*201 la_data_out[2]
+*202 la_data_out[30]
+*203 la_data_out[31]
+*204 la_data_out[32]
+*205 la_data_out[33]
+*206 la_data_out[34]
+*207 la_data_out[35]
+*208 la_data_out[36]
+*209 la_data_out[37]
+*210 la_data_out[38]
+*211 la_data_out[39]
+*212 la_data_out[3]
+*213 la_data_out[40]
+*214 la_data_out[41]
+*215 la_data_out[42]
+*216 la_data_out[43]
+*217 la_data_out[44]
+*218 la_data_out[45]
+*219 la_data_out[46]
+*220 la_data_out[47]
+*221 la_data_out[48]
+*222 la_data_out[49]
+*223 la_data_out[4]
+*224 la_data_out[50]
+*225 la_data_out[51]
+*226 la_data_out[52]
+*227 la_data_out[53]
+*228 la_data_out[54]
+*229 la_data_out[55]
+*230 la_data_out[56]
+*231 la_data_out[57]
+*232 la_data_out[58]
+*233 la_data_out[59]
+*234 la_data_out[5]
+*235 la_data_out[60]
+*236 la_data_out[61]
+*237 la_data_out[62]
+*238 la_data_out[63]
+*239 la_data_out[6]
+*240 la_data_out[7]
+*241 la_data_out[8]
+*242 la_data_out[9]
+*243 la_oenb[0]
+*244 la_oenb[10]
+*245 la_oenb[11]
+*246 la_oenb[12]
+*247 la_oenb[13]
+*248 la_oenb[14]
+*249 la_oenb[15]
+*250 la_oenb[16]
+*251 la_oenb[17]
+*252 la_oenb[18]
+*253 la_oenb[19]
+*254 la_oenb[1]
+*255 la_oenb[20]
+*256 la_oenb[21]
+*257 la_oenb[22]
+*258 la_oenb[23]
+*259 la_oenb[24]
+*260 la_oenb[25]
+*261 la_oenb[26]
+*262 la_oenb[27]
+*263 la_oenb[28]
+*264 la_oenb[29]
+*265 la_oenb[2]
+*266 la_oenb[30]
+*267 la_oenb[31]
+*268 la_oenb[32]
+*269 la_oenb[33]
+*270 la_oenb[34]
+*271 la_oenb[35]
+*272 la_oenb[36]
+*273 la_oenb[37]
+*274 la_oenb[38]
+*275 la_oenb[39]
+*276 la_oenb[3]
+*277 la_oenb[40]
+*278 la_oenb[41]
+*279 la_oenb[42]
+*280 la_oenb[43]
+*281 la_oenb[44]
+*282 la_oenb[45]
+*283 la_oenb[46]
+*284 la_oenb[47]
+*285 la_oenb[48]
+*286 la_oenb[49]
+*287 la_oenb[4]
+*288 la_oenb[50]
+*289 la_oenb[51]
+*290 la_oenb[52]
+*291 la_oenb[53]
+*292 la_oenb[54]
+*293 la_oenb[55]
+*294 la_oenb[56]
+*295 la_oenb[57]
+*296 la_oenb[58]
+*297 la_oenb[59]
+*298 la_oenb[5]
+*299 la_oenb[60]
+*300 la_oenb[61]
+*301 la_oenb[62]
+*302 la_oenb[63]
+*303 la_oenb[6]
+*304 la_oenb[7]
+*305 la_oenb[8]
+*306 la_oenb[9]
+*307 user_clock2
+*308 user_irq[0]
+*309 user_irq[1]
+*310 user_irq[2]
+*313 wb_clk_i
+*314 wb_rst_i
+*315 wbs_ack_o
+*316 wbs_adr_i[0]
+*317 wbs_adr_i[10]
+*318 wbs_adr_i[11]
+*319 wbs_adr_i[12]
+*320 wbs_adr_i[13]
+*321 wbs_adr_i[14]
+*322 wbs_adr_i[15]
+*323 wbs_adr_i[16]
+*324 wbs_adr_i[17]
+*325 wbs_adr_i[18]
+*326 wbs_adr_i[19]
+*327 wbs_adr_i[1]
+*328 wbs_adr_i[20]
+*329 wbs_adr_i[21]
+*330 wbs_adr_i[22]
+*331 wbs_adr_i[23]
+*332 wbs_adr_i[24]
+*333 wbs_adr_i[25]
+*334 wbs_adr_i[26]
+*335 wbs_adr_i[27]
+*336 wbs_adr_i[28]
+*337 wbs_adr_i[29]
+*338 wbs_adr_i[2]
+*339 wbs_adr_i[30]
+*340 wbs_adr_i[31]
+*341 wbs_adr_i[3]
+*342 wbs_adr_i[4]
+*343 wbs_adr_i[5]
+*344 wbs_adr_i[6]
+*345 wbs_adr_i[7]
+*346 wbs_adr_i[8]
+*347 wbs_adr_i[9]
+*348 wbs_cyc_i
+*349 wbs_dat_i[0]
+*350 wbs_dat_i[10]
+*351 wbs_dat_i[11]
+*352 wbs_dat_i[12]
+*353 wbs_dat_i[13]
+*354 wbs_dat_i[14]
+*355 wbs_dat_i[15]
+*356 wbs_dat_i[16]
+*357 wbs_dat_i[17]
+*358 wbs_dat_i[18]
+*359 wbs_dat_i[19]
+*360 wbs_dat_i[1]
+*361 wbs_dat_i[20]
+*362 wbs_dat_i[21]
+*363 wbs_dat_i[22]
+*364 wbs_dat_i[23]
+*365 wbs_dat_i[24]
+*366 wbs_dat_i[25]
+*367 wbs_dat_i[26]
+*368 wbs_dat_i[27]
+*369 wbs_dat_i[28]
+*370 wbs_dat_i[29]
+*371 wbs_dat_i[2]
+*372 wbs_dat_i[30]
+*373 wbs_dat_i[31]
+*374 wbs_dat_i[3]
+*375 wbs_dat_i[4]
+*376 wbs_dat_i[5]
+*377 wbs_dat_i[6]
+*378 wbs_dat_i[7]
+*379 wbs_dat_i[8]
+*380 wbs_dat_i[9]
+*381 wbs_dat_o[0]
+*382 wbs_dat_o[10]
+*383 wbs_dat_o[11]
+*384 wbs_dat_o[12]
+*385 wbs_dat_o[13]
+*386 wbs_dat_o[14]
+*387 wbs_dat_o[15]
+*388 wbs_dat_o[16]
+*389 wbs_dat_o[17]
+*390 wbs_dat_o[18]
+*391 wbs_dat_o[19]
+*392 wbs_dat_o[1]
+*393 wbs_dat_o[20]
+*394 wbs_dat_o[21]
+*395 wbs_dat_o[22]
+*396 wbs_dat_o[23]
+*397 wbs_dat_o[24]
+*398 wbs_dat_o[25]
+*399 wbs_dat_o[26]
+*400 wbs_dat_o[27]
+*401 wbs_dat_o[28]
+*402 wbs_dat_o[29]
+*403 wbs_dat_o[2]
+*404 wbs_dat_o[30]
+*405 wbs_dat_o[31]
+*406 wbs_dat_o[3]
+*407 wbs_dat_o[4]
+*408 wbs_dat_o[5]
+*409 wbs_dat_o[6]
+*410 wbs_dat_o[7]
+*411 wbs_dat_o[8]
+*412 wbs_dat_o[9]
+*413 wbs_sel_i[0]
+*414 wbs_sel_i[1]
+*415 wbs_sel_i[2]
+*416 wbs_sel_i[3]
+*417 wbs_stb_i
+*418 wbs_we_i
+*419 _0_
+*420 OQPSK_RCOSINE_ALL
+
+*PORTS
+io_in[0] I
+io_in[10] I
+io_in[11] I
+io_in[12] I
+io_in[13] I
+io_in[14] I
+io_in[15] I
+io_in[16] I
+io_in[17] I
+io_in[18] I
+io_in[19] I
+io_in[1] I
+io_in[20] I
+io_in[21] I
+io_in[22] I
+io_in[23] I
+io_in[24] I
+io_in[25] I
+io_in[26] I
+io_in[27] I
+io_in[28] I
+io_in[29] I
+io_in[2] I
+io_in[30] I
+io_in[31] I
+io_in[32] I
+io_in[33] I
+io_in[34] I
+io_in[35] I
+io_in[36] I
+io_in[37] I
+io_in[3] I
+io_in[4] I
+io_in[5] I
+io_in[6] I
+io_in[7] I
+io_in[8] I
+io_in[9] I
+io_oeb[0] O
+io_oeb[10] O
+io_oeb[11] O
+io_oeb[12] O
+io_oeb[13] O
+io_oeb[14] O
+io_oeb[15] O
+io_oeb[16] O
+io_oeb[17] O
+io_oeb[18] O
+io_oeb[19] O
+io_oeb[1] O
+io_oeb[20] O
+io_oeb[21] O
+io_oeb[22] O
+io_oeb[23] O
+io_oeb[24] O
+io_oeb[25] O
+io_oeb[26] O
+io_oeb[27] O
+io_oeb[28] O
+io_oeb[29] O
+io_oeb[2] O
+io_oeb[30] O
+io_oeb[31] O
+io_oeb[32] O
+io_oeb[33] O
+io_oeb[34] O
+io_oeb[35] O
+io_oeb[36] O
+io_oeb[37] O
+io_oeb[3] O
+io_oeb[4] O
+io_oeb[5] O
+io_oeb[6] O
+io_oeb[7] O
+io_oeb[8] O
+io_oeb[9] O
+io_out[0] O
+io_out[10] O
+io_out[11] O
+io_out[12] O
+io_out[13] O
+io_out[14] O
+io_out[15] O
+io_out[16] O
+io_out[17] O
+io_out[18] O
+io_out[19] O
+io_out[1] O
+io_out[20] O
+io_out[21] O
+io_out[22] O
+io_out[23] O
+io_out[24] O
+io_out[25] O
+io_out[26] O
+io_out[27] O
+io_out[28] O
+io_out[29] O
+io_out[2] O
+io_out[30] O
+io_out[31] O
+io_out[32] O
+io_out[33] O
+io_out[34] O
+io_out[35] O
+io_out[36] O
+io_out[37] O
+io_out[3] O
+io_out[4] O
+io_out[5] O
+io_out[6] O
+io_out[7] O
+io_out[8] O
+io_out[9] O
+la_data_in[0] I
+la_data_in[10] I
+la_data_in[11] I
+la_data_in[12] I
+la_data_in[13] I
+la_data_in[14] I
+la_data_in[15] I
+la_data_in[16] I
+la_data_in[17] I
+la_data_in[18] I
+la_data_in[19] I
+la_data_in[1] I
+la_data_in[20] I
+la_data_in[21] I
+la_data_in[22] I
+la_data_in[23] I
+la_data_in[24] I
+la_data_in[25] I
+la_data_in[26] I
+la_data_in[27] I
+la_data_in[28] I
+la_data_in[29] I
+la_data_in[2] I
+la_data_in[30] I
+la_data_in[31] I
+la_data_in[32] I
+la_data_in[33] I
+la_data_in[34] I
+la_data_in[35] I
+la_data_in[36] I
+la_data_in[37] I
+la_data_in[38] I
+la_data_in[39] I
+la_data_in[3] I
+la_data_in[40] I
+la_data_in[41] I
+la_data_in[42] I
+la_data_in[43] I
+la_data_in[44] I
+la_data_in[45] I
+la_data_in[46] I
+la_data_in[47] I
+la_data_in[48] I
+la_data_in[49] I
+la_data_in[4] I
+la_data_in[50] I
+la_data_in[51] I
+la_data_in[52] I
+la_data_in[53] I
+la_data_in[54] I
+la_data_in[55] I
+la_data_in[56] I
+la_data_in[57] I
+la_data_in[58] I
+la_data_in[59] I
+la_data_in[5] I
+la_data_in[60] I
+la_data_in[61] I
+la_data_in[62] I
+la_data_in[63] I
+la_data_in[6] I
+la_data_in[7] I
+la_data_in[8] I
+la_data_in[9] I
+la_data_out[0] O
+la_data_out[10] O
+la_data_out[11] O
+la_data_out[12] O
+la_data_out[13] O
+la_data_out[14] O
+la_data_out[15] O
+la_data_out[16] O
+la_data_out[17] O
+la_data_out[18] O
+la_data_out[19] O
+la_data_out[1] O
+la_data_out[20] O
+la_data_out[21] O
+la_data_out[22] O
+la_data_out[23] O
+la_data_out[24] O
+la_data_out[25] O
+la_data_out[26] O
+la_data_out[27] O
+la_data_out[28] O
+la_data_out[29] O
+la_data_out[2] O
+la_data_out[30] O
+la_data_out[31] O
+la_data_out[32] O
+la_data_out[33] O
+la_data_out[34] O
+la_data_out[35] O
+la_data_out[36] O
+la_data_out[37] O
+la_data_out[38] O
+la_data_out[39] O
+la_data_out[3] O
+la_data_out[40] O
+la_data_out[41] O
+la_data_out[42] O
+la_data_out[43] O
+la_data_out[44] O
+la_data_out[45] O
+la_data_out[46] O
+la_data_out[47] O
+la_data_out[48] O
+la_data_out[49] O
+la_data_out[4] O
+la_data_out[50] O
+la_data_out[51] O
+la_data_out[52] O
+la_data_out[53] O
+la_data_out[54] O
+la_data_out[55] O
+la_data_out[56] O
+la_data_out[57] O
+la_data_out[58] O
+la_data_out[59] O
+la_data_out[5] O
+la_data_out[60] O
+la_data_out[61] O
+la_data_out[62] O
+la_data_out[63] O
+la_data_out[6] O
+la_data_out[7] O
+la_data_out[8] O
+la_data_out[9] O
+la_oenb[0] I
+la_oenb[10] I
+la_oenb[11] I
+la_oenb[12] I
+la_oenb[13] I
+la_oenb[14] I
+la_oenb[15] I
+la_oenb[16] I
+la_oenb[17] I
+la_oenb[18] I
+la_oenb[19] I
+la_oenb[1] I
+la_oenb[20] I
+la_oenb[21] I
+la_oenb[22] I
+la_oenb[23] I
+la_oenb[24] I
+la_oenb[25] I
+la_oenb[26] I
+la_oenb[27] I
+la_oenb[28] I
+la_oenb[29] I
+la_oenb[2] I
+la_oenb[30] I
+la_oenb[31] I
+la_oenb[32] I
+la_oenb[33] I
+la_oenb[34] I
+la_oenb[35] I
+la_oenb[36] I
+la_oenb[37] I
+la_oenb[38] I
+la_oenb[39] I
+la_oenb[3] I
+la_oenb[40] I
+la_oenb[41] I
+la_oenb[42] I
+la_oenb[43] I
+la_oenb[44] I
+la_oenb[45] I
+la_oenb[46] I
+la_oenb[47] I
+la_oenb[48] I
+la_oenb[49] I
+la_oenb[4] I
+la_oenb[50] I
+la_oenb[51] I
+la_oenb[52] I
+la_oenb[53] I
+la_oenb[54] I
+la_oenb[55] I
+la_oenb[56] I
+la_oenb[57] I
+la_oenb[58] I
+la_oenb[59] I
+la_oenb[5] I
+la_oenb[60] I
+la_oenb[61] I
+la_oenb[62] I
+la_oenb[63] I
+la_oenb[6] I
+la_oenb[7] I
+la_oenb[8] I
+la_oenb[9] I
+user_clock2 I
+user_irq[0] O
+user_irq[1] O
+user_irq[2] O
+wb_clk_i I
+wb_rst_i I
+wbs_ack_o O
+wbs_adr_i[0] I
+wbs_adr_i[10] I
+wbs_adr_i[11] I
+wbs_adr_i[12] I
+wbs_adr_i[13] I
+wbs_adr_i[14] I
+wbs_adr_i[15] I
+wbs_adr_i[16] I
+wbs_adr_i[17] I
+wbs_adr_i[18] I
+wbs_adr_i[19] I
+wbs_adr_i[1] I
+wbs_adr_i[20] I
+wbs_adr_i[21] I
+wbs_adr_i[22] I
+wbs_adr_i[23] I
+wbs_adr_i[24] I
+wbs_adr_i[25] I
+wbs_adr_i[26] I
+wbs_adr_i[27] I
+wbs_adr_i[28] I
+wbs_adr_i[29] I
+wbs_adr_i[2] I
+wbs_adr_i[30] I
+wbs_adr_i[31] I
+wbs_adr_i[3] I
+wbs_adr_i[4] I
+wbs_adr_i[5] I
+wbs_adr_i[6] I
+wbs_adr_i[7] I
+wbs_adr_i[8] I
+wbs_adr_i[9] I
+wbs_cyc_i I
+wbs_dat_i[0] I
+wbs_dat_i[10] I
+wbs_dat_i[11] I
+wbs_dat_i[12] I
+wbs_dat_i[13] I
+wbs_dat_i[14] I
+wbs_dat_i[15] I
+wbs_dat_i[16] I
+wbs_dat_i[17] I
+wbs_dat_i[18] I
+wbs_dat_i[19] I
+wbs_dat_i[1] I
+wbs_dat_i[20] I
+wbs_dat_i[21] I
+wbs_dat_i[22] I
+wbs_dat_i[23] I
+wbs_dat_i[24] I
+wbs_dat_i[25] I
+wbs_dat_i[26] I
+wbs_dat_i[27] I
+wbs_dat_i[28] I
+wbs_dat_i[29] I
+wbs_dat_i[2] I
+wbs_dat_i[30] I
+wbs_dat_i[31] I
+wbs_dat_i[3] I
+wbs_dat_i[4] I
+wbs_dat_i[5] I
+wbs_dat_i[6] I
+wbs_dat_i[7] I
+wbs_dat_i[8] I
+wbs_dat_i[9] I
+wbs_dat_o[0] O
+wbs_dat_o[10] O
+wbs_dat_o[11] O
+wbs_dat_o[12] O
+wbs_dat_o[13] O
+wbs_dat_o[14] O
+wbs_dat_o[15] O
+wbs_dat_o[16] O
+wbs_dat_o[17] O
+wbs_dat_o[18] O
+wbs_dat_o[19] O
+wbs_dat_o[1] O
+wbs_dat_o[20] O
+wbs_dat_o[21] O
+wbs_dat_o[22] O
+wbs_dat_o[23] O
+wbs_dat_o[24] O
+wbs_dat_o[25] O
+wbs_dat_o[26] O
+wbs_dat_o[27] O
+wbs_dat_o[28] O
+wbs_dat_o[29] O
+wbs_dat_o[2] O
+wbs_dat_o[30] O
+wbs_dat_o[31] O
+wbs_dat_o[3] O
+wbs_dat_o[4] O
+wbs_dat_o[5] O
+wbs_dat_o[6] O
+wbs_dat_o[7] O
+wbs_dat_o[8] O
+wbs_dat_o[9] O
+wbs_sel_i[0] I
+wbs_sel_i[1] I
+wbs_sel_i[2] I
+wbs_sel_i[3] I
+wbs_stb_i I
+wbs_we_i I
+
+*D_NET *36 0.182902
+*CONN
+*P io_in[7] I
+*I *420:REQ_SAMPLE I *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_in[7] 0.000880561
+2 *420:REQ_SAMPLE 9.16202e-05
+3 *36:11 0.0679943
+4 *36:10 0.0679027
+5 *36:8 0.00838519
+6 *36:7 0.00926575
+7 *36:8 *38:8 0.0137738
+8 *36:8 *78:10 0.0146078
+*RES
+1 io_in[7] *36:7 11.745 
+2 *36:7 *36:8 117.27 
+3 *36:8 *36:10 4.5 
+4 *36:10 *36:11 532.89 
+5 *36:11 *420:REQ_SAMPLE 0.765 
+*END
+
+*D_NET *37 0.195759
+*CONN
+*P io_in[8] I
+*I *420:EN I *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_in[8] 0.054778
+2 *420:EN 0.00010964
+3 *37:11 0.0170939
+4 *37:10 0.0169843
+5 *37:8 0.0260075
+6 *37:7 0.0260075
+7 *37:5 0.054778
+*RES
+1 io_in[8] *37:5 429.525 
+2 *37:5 *37:7 4.5 
+3 *37:7 *37:8 200.07 
+4 *37:8 *37:10 4.5 
+5 *37:10 *37:11 135.09 
+6 *37:11 *420:EN 5.265 
+*END
+
+*D_NET *38 0.417202
+*CONN
+*P io_in[9] I
+*I *420:Bit_In I *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_in[9] 0.00114246
+2 *420:Bit_In 0.000839675
+3 *38:11 0.0431186
+4 *38:10 0.0422789
+5 *38:8 0.00828616
+6 *38:7 0.00942862
+7 *38:8 *78:10 0.063914
+8 *38:11 *82:8 0.221114
+9 *38:11 *96:8 0.0133058
+10 *38:11 *313:16 0
+11 *36:8 *38:8 0.0137738
+*RES
+1 io_in[9] *38:7 11.925 
+2 *38:7 *38:8 162.45 
+3 *38:8 *38:10 4.5 
+4 *38:10 *38:11 626.31 
+5 *38:11 *420:Bit_In 9.765 
+*END
+
+*D_NET *78 0.352162
+*CONN
+*P io_out[10] O
+*I *420:I[0] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[10] 0.000923677
+2 *420:I[0] 2.69471e-05
+3 *78:10 0.00834996
+4 *78:9 0.00742628
+5 *78:7 0.0678424
+6 *78:5 0.0678694
+7 *78:10 *79:10 0.111628
+8 *78:10 *80:11 0.00957285
+9 *36:8 *78:10 0.0146078
+10 *38:8 *78:10 0.063914
+*RES
+1 *420:I[0] *78:5 0.225 
+2 *78:5 *78:7 532.53 
+3 *78:7 *78:9 4.5 
+4 *78:9 *78:10 337.77 
+5 *78:10 io_out[10] 12.105 
+*END
+
+*D_NET *79 0.39443
+*CONN
+*P io_out[11] O
+*I *420:I[1] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[11] 0.000945234
+2 *420:I[1] 2.69471e-05
+3 *79:10 0.00519054
+4 *79:9 0.00424531
+5 *79:7 0.067838
+6 *79:5 0.067865
+7 *79:10 *80:11 0.136691
+8 *78:10 *79:10 0.111628
+*RES
+1 *420:I[1] *79:5 0.225 
+2 *79:5 *79:7 532.35 
+3 *79:7 *79:9 4.5 
+4 *79:9 *79:10 347.49 
+5 *79:10 io_out[11] 12.285 
+*END
+
+*D_NET *80 0.641253
+*CONN
+*P io_out[12] O
+*I *420:I[2] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[12] 0.00122483
+2 *420:I[2] 0.000454362
+3 *80:11 0.00792017
+4 *80:10 0.00669535
+5 *80:8 0.0389168
+6 *80:7 0.0393712
+7 *80:8 *81:8 0.229265
+8 *80:8 *86:8 0.00183337
+9 *80:8 *94:8 0.00344678
+10 *80:11 *81:11 0.0184572
+11 *80:11 *82:11 0.147404
+12 *78:10 *80:11 0.00957285
+13 *79:10 *80:11 0.136691
+*RES
+1 *420:I[2] *80:7 7.965 
+2 *80:7 *80:8 592.29 
+3 *80:8 *80:10 4.5 
+4 *80:10 *80:11 478.89 
+5 *80:11 io_out[12] 12.465 
+*END
+
+*D_NET *81 0.628506
+*CONN
+*P io_out[13] O
+*I *420:I[3] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[13] 0.00102708
+2 *420:I[3] 0.000493321
+3 *81:11 0.0373328
+4 *81:10 0.0363057
+5 *81:8 0.0247844
+6 *81:7 0.0252777
+7 *81:8 *86:8 0.0830996
+8 *81:11 *82:11 0.172463
+9 *80:8 *81:8 0.229265
+10 *80:11 *81:11 0.0184572
+*RES
+1 *420:I[3] *81:7 8.145 
+2 *81:7 *81:8 573.57 
+3 *81:8 *81:10 4.5 
+4 *81:10 *81:11 542.79 
+5 *81:11 io_out[13] 12.825 
+*END
+
+*D_NET *82 0.646986
+*CONN
+*P io_out[14] O
+*I *420:I[4] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[14] 0.00098835
+2 *420:I[4] 0.000766401
+3 *82:11 0.0134992
+4 *82:10 0.0125108
+5 *82:8 0.035262
+6 *82:7 0.0360284
+7 *82:8 *96:8 0.0069498
+8 *38:11 *82:8 0.221114
+9 *80:11 *82:11 0.147404
+10 *81:11 *82:11 0.172463
+*RES
+1 *420:I[4] *82:7 9.945 
+2 *82:7 *82:8 553.23 
+3 *82:8 *82:10 4.5 
+4 *82:10 *82:11 502.11 
+5 *82:11 io_out[14] 12.645 
+*END
+
+*D_NET *83 0.416892
+*CONN
+*P io_out[15] O
+*I *420:I[5] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[15] 0.00107486
+2 *420:I[5] 0.000448899
+3 *83:14 0.052919
+4 *83:13 0.0518441
+5 *83:11 0.0745949
+6 *83:10 0.0750438
+7 *83:11 *87:13 0.0129736
+8 *83:14 *85:12 0.147993
+*RES
+1 *420:I[5] *83:10 17.1 
+2 *83:10 *83:11 591.93 
+3 *83:11 *83:13 4.5 
+4 *83:13 *83:14 585.81 
+5 *83:14 io_out[15] 12.825 
+*END
+
+*D_NET *84 0.243461
+*CONN
+*P io_out[16] O
+*I *420:I[6] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[16] 0.000201854
+2 *420:I[6] 0.00170503
+3 *84:14 0.0731025
+4 *84:13 0.0729006
+5 *84:11 0.0469228
+6 *84:9 0.0486278
+*RES
+1 *420:I[6] *84:9 13.995 
+2 *84:9 *84:11 367.38 
+3 *84:11 *84:13 4.5 
+4 *84:13 *84:14 563.13 
+5 *84:14 io_out[16] 2.295 
+*END
+
+*D_NET *85 0.354306
+*CONN
+*P io_out[17] O
+*I *420:I[7] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[17] 0.00105188
+2 *420:I[7] 9.89439e-05
+3 *85:12 0.025407
+4 *85:11 0.0243551
+5 *85:9 0.0728304
+6 *85:8 0.0729293
+7 *85:9 *89:13 0.00964065
+8 *83:14 *85:12 0.147993
+*RES
+1 *420:I[7] *85:8 14.31 
+2 *85:8 *85:9 573.75 
+3 *85:9 *85:11 4.5 
+4 *85:11 *85:12 370.35 
+5 *85:12 io_out[17] 12.645 
+*END
+
+*D_NET *86 0.295182
+*CONN
+*P io_out[18] O
+*I *420:I[8] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[18] 0.000308285
+2 *420:I[8] 0.000532279
+3 *86:11 0.0831953
+4 *86:10 0.082887
+5 *86:8 0.0159965
+6 *86:7 0.0165287
+7 *86:8 *94:8 0.0108014
+8 *80:8 *86:8 0.00183337
+9 *81:8 *86:8 0.0830996
+*RES
+1 *420:I[8] *86:7 8.325 
+2 *86:7 *86:8 244.53 
+3 *86:8 *86:10 4.5 
+4 *86:10 *86:11 639.27 
+5 *86:11 io_out[18] 2.835 
+*END
+
+*D_NET *87 0.21208
+*CONN
+*P io_out[19] O
+*I *420:I[9] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[19] 0.00013291
+2 *420:I[9] 0.000505928
+3 *87:17 0.0700788
+4 *87:16 0.0699459
+5 *87:14 0.0166198
+6 *87:13 0.0187882
+7 *87:10 0.00267435
+8 *87:14 *89:14 0.0198469
+9 *87:14 *95:13 0.000514054
+10 *83:11 *87:13 0.0129736
+*RES
+1 *420:I[9] *87:10 17.28 
+2 *87:10 *87:13 37.53 
+3 *87:13 *87:14 159.75 
+4 *87:14 *87:16 4.5 
+5 *87:16 *87:17 540.27 
+6 *87:17 io_out[19] 1.755 
+*END
+
+*D_NET *89 0.179845
+*CONN
+*P io_out[20] O
+*I *420:I[10] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[20] 0.00036847
+2 *420:I[10] 0.00185158
+3 *89:17 0.0703596
+4 *89:16 0.0699911
+5 *89:14 0.00296743
+6 *89:13 0.004819
+7 *85:9 *89:13 0.00964065
+8 *87:14 *89:14 0.0198469
+*RES
+1 *420:I[10] *89:13 43.65 
+2 *89:13 *89:14 49.05 
+3 *89:14 *89:16 4.5 
+4 *89:16 *89:17 540.09 
+5 *89:17 io_out[20] 3.375 
+*END
+
+*D_NET *90 0.206101
+*CONN
+*P io_out[21] O
+*I *420:I[11] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[21] 0.00178733
+2 *420:I[11] 0.000514095
+3 *90:14 0.0702913
+4 *90:13 0.068504
+5 *90:11 0.0196886
+6 *90:10 0.0196886
+7 *90:8 0.0125566
+8 *90:7 0.0130707
+9 *90:11 *313:16 0
+*RES
+1 *420:I[11] *90:7 8.685 
+2 *90:7 *90:8 96.21 
+3 *90:8 *90:10 4.5 
+4 *90:10 *90:11 152.91 
+5 *90:11 *90:13 4.5 
+6 *90:13 *90:14 528.75 
+7 *90:14 io_out[21] 20.295 
+*END
+
+*D_NET *91 0.266869
+*CONN
+*P io_out[22] O
+*I *420:addI[0] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[22] 0.00477485
+2 *420:addI[0] 0.000454362
+3 *91:11 0.0827717
+4 *91:10 0.0779968
+5 *91:8 0.0123373
+6 *91:7 0.0127917
+7 *91:8 *94:8 0.0757423
+*RES
+1 *420:addI[0] *91:7 7.965 
+2 *91:7 *91:8 189.27 
+3 *91:8 *91:10 4.5 
+4 *91:10 *91:11 602.28 
+5 *91:11 io_out[22] 36.945 
+*END
+
+*D_NET *92 0.213288
+*CONN
+*P io_out[23] O
+*I *420:addI[1] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[23] 0.000270799
+2 *420:addI[1] 0.000107311
+3 *92:11 0.072117
+4 *92:10 0.0718462
+5 *92:8 0.0344198
+6 *92:7 0.0345271
+*RES
+1 *420:addI[1] *92:7 9.81 
+2 *92:7 *92:8 269.91 
+3 *92:8 *92:10 4.5 
+4 *92:10 *92:11 554.85 
+5 *92:11 io_out[23] 2.835 
+*END
+
+*D_NET *93 0.252958
+*CONN
+*P io_out[24] O
+*I *420:addI[2] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[24] 0.00177706
+2 *420:addI[2] 0.000169172
+3 *93:11 0.0535389
+4 *93:10 0.0517618
+5 *93:8 0.0727711
+6 *93:7 0.0729403
+*RES
+1 *420:addI[2] *93:7 5.805 
+2 *93:7 *93:8 561.51 
+3 *93:8 *93:10 4.5 
+4 *93:10 *93:11 405.18 
+5 *93:11 io_out[24] 13.185 
+*END
+
+*D_NET *94 0.372715
+*CONN
+*P io_out[25] O
+*I *420:addI[3] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[25] 0.000852903
+2 *420:addI[3] 0.000493321
+3 *94:11 0.0511034
+4 *94:10 0.0502505
+5 *94:8 0.0319238
+6 *94:7 0.0324171
+7 *94:11 *96:11 0.115684
+8 *80:8 *94:8 0.00344678
+9 *86:8 *94:8 0.0108014
+10 *91:8 *94:8 0.0757423
+*RES
+1 *420:addI[3] *94:7 8.145 
+2 *94:7 *94:8 359.19 
+3 *94:8 *94:10 4.5 
+4 *94:10 *94:11 534.69 
+5 *94:11 io_out[25] 10.665 
+*END
+
+*D_NET *95 0.20304
+*CONN
+*P io_out[26] O
+*I *420:addI[4] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[26] 0.000242542
+2 *420:addI[4] 0.000634974
+3 *95:17 0.0531332
+4 *95:16 0.0528907
+5 *95:14 0.0474246
+6 *95:13 0.0480596
+7 *95:14 *96:7 0.000139905
+8 *87:14 *95:13 0.000514054
+*RES
+1 *420:addI[4] *95:13 19.845 
+2 *95:13 *95:14 366.39 
+3 *95:14 *95:16 4.5 
+4 *95:16 *95:17 413.91 
+5 *95:17 io_out[26] 2.475 
+*END
+
+*D_NET *96 0.280084
+*CONN
+*P io_out[27] O
+*I *420:addI[5] O *D OQPSK_RCOSINE_ALL
+*CAP
+1 io_out[27] 0.000891632
+2 *420:addI[5] 0.000740597
+3 *96:11 0.0199632
+4 *96:10 0.0190715
+5 *96:8 0.0512985
+6 *96:7 0.0520391
+7 *96:8 *313:16 0
+8 *38:11 *96:8 0.0133058
+9 *82:8 *96:8 0.0069498
+10 *94:11 *96:11 0.115684
+11 *95:14 *96:7 0.000139905
+*RES
+1 *420:addI[5] *96:7 10.125 
+2 *96:7 *96:8 406.53 
+3 *96:8 *96:10 4.5 
+4 *96:10 *96:11 294.03 
+5 *96:11 io_out[27] 10.845 
+*END
+
+*D_NET *313 0.218623
+*CONN
+*P wb_clk_i I
+*I *420:ACK I *D OQPSK_RCOSINE_ALL
+*CAP
+1 wb_clk_i 0.000281541
+2 *420:ACK 0.000558171
+3 *313:16 0.0545623
+4 *313:15 0.0540042
+5 *313:13 0.0544676
+6 *313:11 0.0547492
+7 *38:11 *313:16 0
+8 *90:11 *313:16 0
+9 *96:8 *313:16 0
+*RES
+1 wb_clk_i *313:11 2.655 
+2 *313:11 *313:13 420.75 
+3 *313:13 *313:15 4.5 
+4 *313:15 *313:16 351.81 
+5 *313:16 *420:ACK 8.505 
+*END
+
+*D_NET *314 0.201345
+*CONN
+*P wb_rst_i I
+*I *420:RST I *D OQPSK_RCOSINE_ALL
+*CAP
+1 wb_rst_i 0.000810134
+2 *420:RST 0.0511692
+3 *314:10 0.0511692
+4 *314:8 0.0486932
+5 *314:7 0.0495034
+*RES
+1 wb_rst_i *314:7 10.665 
+2 *314:7 *314:8 308.79 
+3 *314:8 *314:10 4.5 
+4 *314:10 *420:RST 315.225 
+*END
